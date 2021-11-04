@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 <style>
     body{ margin: 0; padding: 0; border: 0; background-color: #080810; color: #FFF; }
@@ -14,6 +15,8 @@
     .title h1{ margin: 32px; }
     .identify{ background-color: #040408; color: white; width: 160px; text-align: center; }
 </style>
+</head>
+<body>
 <?php
     //error_reporting(E_ALL);
     //ini_set("display_errors", 1);
@@ -58,3 +61,4 @@
     <h1 class="identify">급식</h1>
     <?php for($i=0; $i<sizeof($meal); $i++){ echo '<h2>'.preg_replace("/[0-9,.]/", "", $meal[$i]).'</h2><br/>'; } ?>
 </div>
+</body>
